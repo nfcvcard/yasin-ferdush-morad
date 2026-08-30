@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Md. Yasin Ferdush Morad — Zila Parishad, Dhaka</title>
+<meta name="description" content="Digital business card for Md. Yasin Ferdush Morad, Administrator, Zila Parishad, Dhaka. Tap to save contact or call.">
+<meta property="og:title" content="Md. Yasin Ferdush Morad — Zila Parishad, Dhaka">
+<meta property="og:description" content="Administrator, Zila Parishad, Dhaka. Tap to save contact or call.">
+<meta property="og:type" content="profile">
+<link rel="icon" href="logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,440;9..144,560;9..144,640&family=Noto+Serif+Bengali:wght@500;600&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#FBFAF5;
+    --surface:#F2EEE1;
+    --row-hover:#EAE3CE;
+    --ink:#182420;
+    --ink-soft:#5E6C61;
+    --green:#0F5C38;
+    --green-deep:#0A3F27;
+    --gold:#A9791F;
+    --gold-soft:#D9B463;
+    --border:#E1DAC3;
+    --focus:#0F5C38;
+    --shadow: rgba(15,92,56,0.12);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --paper:#0E1512;
+      --surface:#161F1A;
+      --row-hover:#1E2921;
+      --ink:#EDEBDD;
+      --ink-soft:#9AA79C;
+      --green:#4FBE8A;
+      --green-deep:#6ED9A6;
+      --gold:#DDB767;
+      --gold-soft:#EFD290;
+      --border:#293229;
+      --focus:#4FBE8A;
+      --shadow: rgba(0,0,0,0.45);
+    }
+  }
+
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    min-height:100vh;
+    background: var(--paper);
+    color:var(--ink);
+    font-family:'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding: 8vh 20px 10vh;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{ color:inherit; }
+  a:focus-visible, button:focus-visible{
+    outline: 2px solid var(--focus);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  .card-wrap{ width:100%; max-width: 380px; }
+
+  .card{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding: 34px 30px 32px;
+    border-radius: 22px;
+    border: 1px solid var(--border);
+    background: var(--paper);
+    box-shadow: 0 4px 28px var(--shadow);
+  }
+
+  .crest{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom: 20px;
+  }
+  .crest img{
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    display:block;
+  }
+  .crest-label{
+    margin: 8px 0 0;
+    font-family:'IBM Plex Mono', monospace;
+    font-size: 0.6rem;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  .avatar-ring{
+    width: 108px;
+    height: 108px;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(135deg, var(--green), var(--gold-soft));
+    margin-bottom: 18px;
+  }
+  .avatar-ring img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit: cover;
+    display:block;
+    border: 2px solid var(--paper);
+  }
+
+  h1{
+    font-family:'Fraunces', Georgia, serif;
+    font-weight:560;
+    font-size: 1.5rem;
+    line-height:1.2;
+    text-align:center;
+    text-wrap: balance;
+    margin: 0 0 4px;
+    color: var(--ink);
+  }
+  .role{
+    text-align:center;
+    font-size: 0.85rem;
+    font-weight:600;
+    color: var(--green);
+    margin: 0;
+  }
+
+  .divider{
+    width: 44px;
+    height: 2px;
+    background: var(--gold-soft);
+    margin: 22px 0;
+    border:none;
+    border-radius: 2px;
+  }
+
+  .actions{ display:flex; gap:10px; width:100%; }
+  .btn{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:7px;
+    text-decoration:none;
+    font-family: inherit;
+    font-size: 0.86rem;
+    font-weight:600;
+    padding: 13px 14px;
+    border-radius: 999px;
+    min-height: 46px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.18s ease, background 0.18s ease, box-shadow 0.18s ease;
+  }
+  .btn svg{ flex-shrink:0; }
+  .btn-primary{
+    background: var(--green);
+    color: #fff;
+    box-shadow: 0 4px 16px var(--shadow);
+  }
+  .btn-primary:hover{ background: var(--green-deep); transform: translateY(-1px); }
+  .btn-secondary{
+    background: var(--surface);
+    color: var(--ink);
+    border: 1px solid var(--border);
+  }
+  .btn-secondary:hover{ background: var(--row-hover); }
+  .btn:active{ transform: scale(0.97); }
+
+  .section-label{
+    width:100%;
+    max-width: 380px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin: 26px 0 6px;
+    padding: 0 16px;
+  }
+  .particulars{
+    width:100%;
+    max-width: 380px;
+    list-style:none;
+    margin: 0;
+    padding:0;
+    border-top: 1px solid var(--border);
+  }
+  .particulars li{ border-bottom: 1px solid var(--border); }
+  .particulars a{
+    display:flex;
+    align-items:center;
+    gap: 12px;
+    text-decoration:none;
+    padding: 12px 16px;
+    transition: background 0.15s ease;
+  }
+  .particulars a:hover{ background: var(--row-hover); }
+  .p-icon{
+    flex-shrink:0;
+    width: 30px;
+    height: 30px;
+    border-radius: 9px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background: var(--surface);
+    color: var(--green);
+  }
+  .p-icon.wa{ color: #25B858; }
+  .p-text{
+    flex:1;
+    min-width:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap: 12px;
+  }
+  .p-label{
+    flex-shrink:0;
+    font-family:'IBM Plex Mono', monospace;
+    font-size: 0.64rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .p-value{
+    text-align:right;
+    font-family:'IBM Plex Mono', monospace;
+    font-size: 0.83rem;
+    color: var(--ink);
+    word-break: break-word;
+    font-variant-numeric: tabular-nums;
+  }
+
+  footer{ text-align:center; margin-top: 24px; }
+  .tagline{
+    font-family:'Noto Serif Bengali', serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.05em;
+    color: var(--gold);
+    margin: 0 0 4px;
+  }
+  .firm-line{
+    font-family:'IBM Plex Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    opacity: 0.8;
+    margin:0;
+  }
+
+  .reveal{
+    opacity:0;
+    transform: translateY(12px);
+    animation: rise 0.6s cubic-bezier(0.22,1,0.36,1) forwards;
+  }
+  @keyframes rise{ to{ opacity:1; transform:translateY(0); } }
+  .d1{ animation-delay: 0.05s; }
+  .d3{ animation-delay: 0.28s; }
+
+  @media (prefers-reduced-motion: reduce){
+    .reveal{ animation:none !important; opacity:1 !important; transform:none !important; }
+    .btn{ transition:none; }
+  }
+</style>
+</head>
+<body>
+
+<div style="display:flex; flex-direction:column; align-items:center; width:100%;">
+
+  <div class="card-wrap reveal d1">
+    <div class="card">
+      <div class="crest">
+        <img src="logo.jpg" alt="Zila Parishad Dhaka seal">
+        <p class="crest-label">Government of Bangladesh</p>
+      </div>
+
+      <div class="avatar-ring">
+        <img src="avatar.jpg" alt="Md. Yasin Ferdush Morad">
+      </div>
+
+      <h1>Md. Yasin Ferdush Morad</h1>
+      <p class="role">Administrator &middot; Zila Parishad, Dhaka</p>
+
+      <hr class="divider">
+
+      <div class="actions">
+        <a class="btn btn-primary" href="yasin_morad_final.vcf" download>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          <span>Save Contact</span>
+        </a>
+        <a class="btn btn-secondary" href="tel:+8801721245871">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span>Call</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <p class="section-label reveal d3">Contact</p>
+  <ul class="particulars reveal d3">
+    <li>
+      <a href="tel:+8801721245871">
+        <span class="p-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+        <span class="p-text"><span class="p-label">Mobile</span><span class="p-value">+880&nbsp;1721-245871</span></span>
+      </a>
+    </li>
+    <li>
+      <a href="tel:+8801713038317">
+        <span class="p-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+        <span class="p-text"><span class="p-label">Mobile&nbsp;2</span><span class="p-value">+880&nbsp;1713-038317</span></span>
+      </a>
+    </li>
+    <li>
+      <a href="https://wa.me/393889749044" target="_blank" rel="noopener">
+        <span class="p-icon wa"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.29-1.39a9.87 9.87 0 0 0 4.75 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm5.8 14.13c-.24.68-1.4 1.3-1.93 1.35-.5.05-1 .25-3.36-.7-2.85-1.13-4.63-4.03-4.77-4.22-.14-.19-1.15-1.53-1.15-2.92 0-1.39.73-2.07.99-2.35.26-.28.56-.35.75-.35.19 0 .38 0 .54.01.18.01.4-.07.63.48.24.58.8 2 .87 2.14.07.14.11.31.02.5-.09.19-.14.31-.27.47-.14.17-.29.37-.41.5-.14.14-.28.29-.12.57.16.28.72 1.19 1.55 1.93 1.06.95 1.96 1.24 2.24 1.38.28.14.44.12.6-.07.17-.19.71-.83.9-1.11.19-.28.38-.24.63-.14.26.09 1.65.78 1.93.92.28.14.47.21.54.33.07.12.07.68-.17 1.34z"/></svg></span>
+        <span class="p-text"><span class="p-label">WhatsApp</span><span class="p-value">+39&nbsp;388&nbsp;974&nbsp;9044</span></span>
+      </a>
+    </li>
+    <li>
+      <a href="mailto:murad@aleayasweater.com">
+        <span class="p-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span>
+        <span class="p-text"><span class="p-label">Email</span><span class="p-value">murad@aleayasweater.com</span></span>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.zpdhaka.gov.bd" target="_blank" rel="noopener">
+        <span class="p-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>
+        <span class="p-text"><span class="p-label">Website</span><span class="p-value">www.zpdhaka.gov.bd</span></span>
+      </a>
+    </li>
+  </ul>
+
+  <footer class="reveal d3">
+    <p class="tagline">গণতন্ত্র &bull; উন্নয়ন &bull; সেবা</p>
+    <p class="firm-line">Zila Parishad, Dhaka &mdash; Government of Bangladesh</p>
+  </footer>
+
+</div>
+
+</body>
+</html>
