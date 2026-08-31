@@ -78,11 +78,17 @@
     box-shadow: 0 4px 28px var(--shadow);
   }
 
+  .id-row{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
   .crest{
     display:flex;
     flex-direction:column;
     align-items:center;
-    margin-bottom: 20px;
   }
   .crest img{
     width: 44px;
@@ -96,7 +102,6 @@
     border-radius: 50%;
     padding: 3px;
     background: linear-gradient(135deg, var(--green), var(--gold-soft));
-    margin-bottom: 18px;
   }
   .avatar-ring img{
     width:100%;
@@ -272,12 +277,14 @@
 
   <div class="card-wrap reveal d1">
     <div class="card">
-      <div class="crest">
-        <img src="logo.jpg" alt="Zila Parishad Dhaka seal">
-      </div>
+      <div class="id-row">
+        <div class="crest">
+          <img src="logo.jpg" alt="Zila Parishad Dhaka seal">
+        </div>
 
-      <div class="avatar-ring">
-        <img src="avatar.jpg" alt="Md. Yasin Ferdush Morad">
+        <div class="avatar-ring">
+          <img src="avatar.jpg" alt="Md. Yasin Ferdush Morad">
+        </div>
       </div>
 
       <h1>Md. Yasin Ferdush Morad</h1>
